@@ -440,11 +440,15 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             }
             SubmitResults();
         }
-
-        if (cps <= 5) return '别伤心，你肯定会超过150的啦';
-        if (cps <= 8) return '就这就这，超我再努力十年吧';
-        if (cps <= 10)  return '150也就随随便便按按吧';
-        if (cps <= 15) return '？怎么做到按这么快的，牛啊牛啊';
+        
+        if (cps <= 3) return '怎么事 几天没见这么拉了';
+        if (cps <= 4) return '我好不容易心动一次，你却让我输的这么彻底，焯！';
+        return '你却让我输的这么彻底，焯！';
+        if (cps <= 5) return '加油加油 你肯定行';
+        if (cps <= 6) return '别伤心，你肯定会超过150的啦';
+        if (cps <= 7) return '想超我？再努力十年吧';
+        if (cps <= 7.5) return '？怎么回事 还真超了？？？';
+        if (cps <= 8)  return '牛啊牛啊这么厉害';
     }
 
     function toStr(obj) {
