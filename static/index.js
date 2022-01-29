@@ -445,9 +445,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
         if (cps <= 4) return '我好不容易心动一次，你却让我输的这么彻底，焯！';
         if (cps <= 5) return '加油加油 你肯定行';
         if (cps <= 6) return '别伤心，你肯定会超过150的啦';
-        if (cps <= 7) return '想超我？再努力十年吧';
-        if (cps <= 7.5) return '？怎么回事 还真超了？？？';
+        if (cps <= 7) return '就这速度？再努力十年吧';
+        if (cps <= 7.5) return '在努力努力，马上了';
         if (cps <= 8)  return '牛啊牛啊这么厉害';
+        if (cps <= 9)  return '有这么快的手速？？';
+        if (cps <= 10)  return '怎么做到的这么快a';
     }
 
     function toStr(obj) {
